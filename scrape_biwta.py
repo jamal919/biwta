@@ -50,11 +50,11 @@ def update_sensors(url='http://biwta.port-log.net/live/map/3.0/src/data/plg/sens
 
 if __name__=='__main__':
     logging.basicConfig(
-        filename='/home/khan/MEGA/resources/data/BIWTA/scraped/scrape.log', 
+        filename='scrape.log', 
         level=logging.INFO,
         format="%(asctime)s %(levelname)s %(message)s")
     
-    outdir = Path('/home/khan/MEGA/resources/data/BIWTA/scraped/records')
+    outdir = Path('./records')
     if not outdir.exists():
         outdir.mkdir(parents=True)
     
